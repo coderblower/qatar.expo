@@ -1,0 +1,105 @@
+#jarallax-container-0 {
+    position: relative; /* Ensure the pseudo-element stays within the container */
+  }
+  
+  #jarallax-container-0::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* White with 50% opacity */
+    z-index: 1; /* Ensures the overlay is on top */
+    pointer-events: none; /* Allow interaction with elements underneath */
+  }
+  
+  #section-sponsors img{
+    /* display: none; */
+    width: 160px;
+    height: 120px;
+  }
+
+  .pricing-s1 li{ 
+    line-height: 1px;
+  }
+
+  .pricing-s1 .bottom ul li {
+	line-height: 35px;
+	padding: 11px 30px;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 100%; /* Ensure it doesn't exceed the parent's width */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.swiper-slide {
+    display: flex; /* Ensure slides are flexible */
+    justify-content: center; /* Center content inside slides */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add some padding for aesthetics */
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.pricing-s1 {
+    background: #fff; /* Background color for slides */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.pricing-s1:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.benefits-section {
+    background-color: black; /* Black background */
+    color: white; /* White text for contrast */
+    padding: 50px 0; /* Top and bottom padding */
+}
+.benefits-header {
+    margin-bottom: 30px;
+}
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between items */
+}
+.benefit-icon {
+    font-size: 1.5rem; /* Icon size */
+    color: var(--primary-color-1); /* Bootstrap primary color */
+    margin-right: 15px; /* Space between icon and text */
+}
+.benefit-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.section-speakers img{
+    width: 200px;
+    height: 30px;
+}
+
+.de-team-list img {
+    height: 190px;
+}
+
+.lead {
+    margin-bottom: 0;
+}
+
+.team-pics img {
+    height: 350px;
+}
+
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; }
+
+
+
