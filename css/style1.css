@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* White with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.6); /* White with 50% opacity */
     z-index: 1; /* Ensures the overlay is on top */
     pointer-events: none; /* Allow interaction with elements underneath */
   }
@@ -101,5 +101,45 @@
     top:0; left:0;
     width: 100%; }
 
+header.smaller:not(.header-bottom):not(.side-header){
+    background: #fff;
+}
 
 
+header.transparent{
+    background: #fff;
+    color:#000
+}
+
+#mainmenu > li > a, .ms-2 dotted-separator > li > a {
+    color: #000;
+}
+
+.logo{
+    width: 140px;
+    transform: translate(60px, -13px) scale(.9);
+    transition: transform .5s ease-in-out;
+}
+
+
+header.smaller:not(.header-bottom):not(.side-header) .logo{
+    transform: translate(60px, -19px) scale(.8); 
+    transition: transform .5s ease-in-out;
+}
+.pricing-s1 .top .price b {
+    font-size: 38px;
+}
+.de_tab {
+    border: 3px solid #000; /* 3px border (you can change color as needed) */
+    border-radius: 10px; /* 10px border-radius */
+    margin-left: 30px; /* Horizontal margin-left from viewport width */
+    margin-right: 30px; /* Horizontal margin-right from viewport width */
+    margin-top: 30px;
+    padding: 20px; /* Optional: Add padding inside the element for better spacing */
+    overflow: hidden;
+    background: #000000;
+}
+
+.Event-details{
+    padding: 0;
+}
