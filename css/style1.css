@@ -155,3 +155,53 @@ header.header-mobile #mainmenu li a{
 header.header-mobile #mainmenu li span.active, header.header-mobile #mainmenu > li > span {
     background-color: #000;
 }
+
+
+footer p {
+    margin:0;
+    line-height: 18px;
+}
+
+.contact-head{
+    position: relative;
+    margin-bottom: 50px;
+}
+.contact-head::before{
+    content: '';
+    bottom:-10px;
+    left: 0;
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.left_lines {
+    position: relative;
+}
+
+.left_lines::after{
+    content: '';
+    top: 30px;
+    left: -42px;
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background-color: #ffffff67;
+    z-index: 99999;
+}
+
+#footer {
+    position: relative;
+}
+
+#footer::after{
+    content: '';
+    top: 60px;
+    left: -80px;
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: #ffffff59;
+    z-index: ;
+}
