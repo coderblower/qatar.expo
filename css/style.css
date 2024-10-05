@@ -1013,7 +1013,7 @@ overflow:visible;
 	}
 	
 	#menu-btn:hover{
-	background:#fff;
+	/* background:#fff; */
 	}
 	
 	#menu-btn:hover:before{

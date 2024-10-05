@@ -143,3 +143,15 @@ header.smaller:not(.header-bottom):not(.side-header) .logo{
 .Event-details{
     padding: 0;
 }
+
+#menu-btn{
+    background-color: var(--primary-color-1);
+}
+
+header.header-mobile #mainmenu li a{
+    color: #255fad;
+}
+
+header.header-mobile #mainmenu li span.active, header.header-mobile #mainmenu > li > span {
+    background-color: #000;
+}
