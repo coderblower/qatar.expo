@@ -157,7 +157,7 @@ header.header-mobile #mainmenu li span.active, header.header-mobile #mainmenu > 
 }
 
 
-footer p {
+footer p, .de-extra-content p {
     margin:0;
     line-height: 18px;
 }
@@ -191,8 +191,9 @@ footer p {
     z-index: 99999;
 }
 
-#footer {
+footer {
     position: relative;
+    background-color: #000;
 }
 
 #footer::after{
@@ -204,4 +205,50 @@ footer p {
     height: 1px;
     background-color: #ffffff59;
     z-index: ;
+}
+
+.swiper-container {
+    height: 800px; /* Set the height of the swiper container */
+}
+
+.swiper-slide {
+    height: 700px; /* Set a fixed height for each slide */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+}
+
+.scrollable-list {
+    height: 400px; /* Set the height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Optional: Style the scrollbar */
+.scrollable-list::-webkit-scrollbar {
+    width: 13px; /* Width of the scrollbar */
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+    background-color: #e9dddd; /* Color of the scrollbar thumb */
+    border-radius: 1px; /* Rounded edges */
+}
+
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: '';
+    bottom: -10px;
+    left: 10px;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff67;
+    z-index: 99999;
+}
+
+.header-extra {
+    display: none
 }
