@@ -78,6 +78,18 @@
     height: auto; /* Maintain aspect ratio */
 }
 
+.wm.dark.wm-border{
+    font-size: 110px;
+    color: green;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255,255,255,.2);
+    /* width: 150px; */
+}
+.mini_title{
+    position: relative; 
+    top:83px
+}
+
 
 .section-speakers img{
     width: 200px;
