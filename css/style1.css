@@ -89,6 +89,11 @@
     position: relative; 
     top:83px
 }
+.about_title {
+    font-size: 1.5em !important;
+     margin-bottom:1em; 
+     text-align:start
+}
 
 
 .section-speakers img{
@@ -263,4 +268,28 @@ footer {
 
 .header-extra {
     display: none
+}
+
+
+/* Styles for screens up to 700px */
+@media (max-width: 700px) {
+    /* Add your styles for small screens here */
+    .box-number .text{
+        margin-left:0px
+    }
+}
+
+
+
+/* Styles for screens up to 900px */
+@media (max-width: 900px) {
+    /* Add your styles for medium-small screens here */
+    .box-number .text{
+        margin-left:0px
+    }  
+}
+/* Styles for screens up to 1200px */
+@media (max-width: 1200px) {
+    /* Add your styles for medium-large screens here */
+
 }
