@@ -70,7 +70,7 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="index.html">
-                                <img class="logo" style="width: 140px;" src="images/logo/logo8.png" alt="">
+                                <img class="logo" style="width: 140px; margin-top: 20px " src="/images/logo/omni.jpg" alt="">
                             </a>
                         </div>
                         <!-- logo close -->
@@ -90,26 +90,28 @@
                             </div>
 
                             <!-- mainmenu begin -->
-                            <ul id="mainmenu" class="ms-2">
-								<li><a href="home.html">Home<span></span></a>
-                                </li>
-								<li><a href="about.html">About<span></span></a></li>
-								<!-- <li><a href="#section-speakers">Speakers<span></span></a></li> -->
-                                <li><a href="#section-hero">event<span></span></a>
-                                    <ul>
-                                        <li><a href="expo_event.html">Exo Event</a></li>
-                                        <li><a href="concert_event.html"> Concert Event</a></li>
-                                        <li><a href="business_sumit.html">Business Summit </a></li>
-                                        
-                                    </ul>
-                                </li> 
-							    <!-- <li><a href="#section-schedule">Schedule<span></span></a></li> -->
-								<!--<li><a href="#section-sponsors">Sponsors<span></span></a></li>  -->
-								<!-- <li><a href="register_now.html">Register<span></span></a></li> -->
-                                <li><a href="register_now.html">Blog<span></span></a></li>
-								<li><a href="#" id="open_contact">contact us<span></span></a></li>
-							</ul> 
-							
+                        
+                          <!-- mainmenu begin -->
+                          <ul id="mainmenu" class="ms-2">
+                            <li><a href="/">Home<span></span></a></li>
+                            <li><a href="about.html">About<span></span></a></li>
+                            <li><a href="#section-hero">Event<span></span></a>
+                                <ul class="dropdown">
+                                    <li><a href="#"> Event 2024 </a>
+                                        <ul class="dropdown">
+                                            <li><a href="expo_event.html">Expo Event</a></li>
+                                            <li><a href="concert_event.html">Concert Event</a></li>
+                                            <li><a href="business_sumit.html">Business Summit</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/blog.html">blog<span></span></a></li>
+                            <li><a href="#" id="open_contact">Contact Us<span></span></a></li>
+                        </ul>
+                        
+                        
+                        <!-- mainmenu close -->
 							<!-- mainmenu close -->
 
                             
@@ -126,54 +128,577 @@
         <!-- content begin -->
         <div id="content" class="no-bottom no-top">
 
+            <style>
+                #news-updates {
+                    padding: 50px 20px;
+                    background-color: #f9f9f9;
+                  }
+                  
+                  .container {
+                    width: 80%;
+                    margin: 0 auto;
+                    text-align: center;
+                  }
+                  
+                  .section-title {
+                    font-size: 2em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    color: #333;
+                  }
+                  
+                  /* News Ticker */
+                  .news-ticker {
+                    background-color: #333;
+                    color: #fff;
+                    font-size: 1.2em;
+                    padding: 10px;
+                    margin-bottom: 40px;
+                    overflow: hidden;
+                  }
+                  
+                 
+                 
+                  
+                  .news-blog {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 40px;
+                  }
+                  
+       
+             
+         
+            
+                  
+            </style>
+           
+              
+            
+
               <!-- section begin -->
-              <section id="section-hero" class="jarallax text-light">
-            	<img src="images/bg/9.jpg" class="jarallax-img" alt="">
+              <section id="section-hero" class="" style="background-color: #fff;">
+                <section id="news-updates" style="padding: 0;">
+                    <div class="container-fluid">
+                      
+                      <!-- News Ticker -->
+                      <div class="news-ticker">
+                        <marquee behavior="scroll" direction="left" class="scrolling-text" scrollamount="3" >
+                            📅 Investment & Business Summit, Qatar-2024 - A global event shaping the future of international business. &nbsp;&nbsp;
+                            📢 TOCC's New Partnership Initiative - A groundbreaking program to support small businesses across the globe. &nbsp;&nbsp;
+                            🌍 TOCC Expands Global Trade Network - Strengthening economic ties and fostering global trade. &nbsp;&nbsp;
+                            🔍 Industry Insights: Trends in Global Trade for 2024 - A comprehensive report on the future of international markets.
+                          </marquee>
+                      </div>
+                    
+                    </div>
+                  </section>
 				<div class="container">
 					<div class="row align-items-center mt-5" style="display: flex; justify-content:space-around">
-						<div class="col-lg-6">
+						
+						
+						<div class="col-lg-8 d-flex justify-content-start">
+							<img src="/images/logo/omni.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+                    
+                      
+                      
+				</div>
+            </section>
+
+
+            <style>
+                /* Section Styling */
+#about-tocc {
+  background: linear-gradient(135deg, #6f21c2, #0a9396);
+  color: #ffffff;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+#about-tocc .container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#about-tocc .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    padding: 10px 20px;
+    
+    border-radius: 8px;
+    text-align: center; /* Center text */
+    margin-left: auto; /* Center the title block horizontally */
+    margin-right: auto;
+    
+  }
+  
+#about-tocc .content-wrapper h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #cae9ff;
+}
+
+#about-tocc .content-wrapper p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #e0fbfc;
+    text-align: start;
+  }
+
+/* Decorative Icon or Border */
+
+
+/* Animation for a subtle effect */
+#about-tocc .container:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+            </style>
+
+            <section style="padding: 0;">
+                
+                <section id="about-tocc">
+                    <div class="title " style="margin-x: auto;">Introduction to TOCC’s Mission</div>
+                    <div class="container">
+                        
+                      <div class="content-wrapper">
+                        <i class="fas fa-globe" style="font-size: 67px; margin-bottom:5px; margin-bottom:10px "></i>
+                        <h1>About The Omniverse Chamber of Commerce (TOCC)</h1>
+                        <p>
+                          The Omniverse Chamber of Commerce (TOCC) is a dynamic, globally connected organization committed to promoting economic growth through international collaboration. TOCC serves as a vital link between businesses, governments, and the public, providing essential support that helps drive private sector growth and international trade.
+                        
+                          Through its expansive network, TOCC strives to create an environment where businesses, especially small and medium enterprises (SMEs), can thrive in today's interconnected world.
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+            </section>
+
+
+
+            <style>
+
+                #testimonials {
+                    padding: 50px 20px;
+                    background-color: #f7f7f7;
+                  }
+                  
+                  .testimonial-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                  }
+                  
+                  .carousel {
+                    position: relative;
+                    max-width: 600px;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    padding: 30px;
+                    text-align: center;
+                    overflow: hidden;
+                  }
+                  
+                  .testimonial {
+                    display: none;
+                  }
+                  
+                  .testimonial.active {
+                    display: block;
+                  }
+                  
+                  .testimonial-image img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-bottom: 20px;
+                  }
+                  
+                  .testimonial-text {
+                    font-size: 1.2em;
+                    font-style: italic;
+                    color: #555555;
+                    margin-bottom: 20px;
+                  }
+                  
+                  .testimonial-author {
+                    font-weight: bold;
+                    color: #333333;
+                    font-size: 1em;
+                  }
+                  
+                  .carousel-dots {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                  }
+                  
+                  .dot {
+                    height: 10px;
+                    width: 10px;
+                    margin: 0 5px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.3s ease;
+                    cursor: pointer;
+                  }
+                  
+                  .dot.active {
+                    background-color: #333;
+                  }
+                  
+                  
+            </style>
+
+            <section id="testimonials" style="min-height:500px; position:relative;">
+                <div class="testimonial-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                  <div class="">
+                    <div class="carousel">
+                      <div class="testimonial active">
+                        <div class="testimonial-image">
+                          <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Random Testimonial Image">
+                        </div>
+                        <div class="testimonial-content">
+                          <p class="testimonial-text">"In investing, what is comfortable is rarely profitable." — Robert Arnott</p>
+                          <p class="testimonial-author">Robert Arnott</p>
+                        </div>
+                      </div>
+              
+                      <div class="testimonial">
+                        <div class="testimonial-image">
+                          <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="TOCC Testimonial Image">
+                        </div>
+                        <div class="testimonial-content">
+                          <p class="testimonial-text">"TOCC has been instrumental in helping our business navigate international markets and build valuable global partnerships." — Jane Doe</p>
+                          <p class="testimonial-author">Jane Doe, CEO</p>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="carousel-dots">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+
+              <style>
+
+                #about-us {
+                    background-color: #f4f4f4;
+                    padding: 40px 20px;
+                  }
+                  
+                  .content-wrapper {
+                    max-width: 1100px;
+                    margin: 0 auto;
+                    text-align: center;
+                  }
+                  
+                  .section-title {
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: #333;
+                    margin-bottom: 20px;
+                    font-family: 'Arial', sans-serif;
+                  }
+                  
+                  .content {
+                    font-size: 18px;
+                    color: #555;
+                    line-height: 1.6;
+                    font-family: 'Arial', sans-serif;
+                  }
+                  
+                  .content p {
+                    margin-bottom: 20px;
+                    text-align: justify;
+                  }
+                  
+                  @media screen and (max-width: 768px) {
+                    .section-title {
+                      font-size: 28px;
+                    }
+                    .content {
+                      font-size: 16px;
+                    }
+                  }
+                  
+              </style>
+
+
+
+              <section id="about-us" style="min-height: 500px; padding: 40px 20px;">
+                <div class="content-wrapper">
+                  <h2 class="section-title">About Us</h2>
+                  <div class="content">
+                    <p>
+                      The Omniverse Chamber of Commerce (TOCC) is the global network of chambers that connect and inspire businesses to benefit real economies and communities. TOCC works with companies to create coherent solutions across the globe. The TOCC delivers tangible results in international engagement, rules and standards, and on-the-ground solutions and implementation. Chambers of commerce are essential intermediaries between government, business, and the general public.
+                    </p>
+                    <p>
+                      With a variety of programs and services, TOCC is operating in almost every country, and the TOCC represents the interests of local, national, regional, bilateral, and transnational chambers of commerce and industry worldwide. The Omniverse Chamber of Commerce (TOCC) is a global organization that supports chambers in fostering private sector development, particularly in developing countries. It connects chambers to businesses based on relevancy, recognizing the importance of small and medium-sized enterprises (SMEs) in the global economy.
+                    </p>
+                    <p>
+                      TOCC offers trade services, practical tools, and events to help chambers deliver the best possible service to their members.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              
+              
+              
+              
+              <style>
+
+
+                /* General Styles for Vision and Mission Section */
+.vision-mission-container {
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #851fa6, #4278b7);
+    align-items: center;
+  }
+  
+  /* Card Styles */
+  .card {
+    width: 100%;
+    max-width: 762px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Vision Card Gradient Background */
+  
+  
+  .mission-card {
+    
+    color: rgb(24, 23, 23);
+  }
+  
+  /* Card Header (Icon and Title) */
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#000;
+  }
+  
+  .icon {
+    font-size: 36px;
+    color: rgb(177, 27, 27);
+  }
+  
+  /* Vision Description */
+  .card-description {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Mission List */
+  .card-description ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card-description li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .card-description li::before {
+    content: "•";
+    position: absolute;
+    left: -25px;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .vision-mission-container {
+      padding: 30px 15px;
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .card-title {
+      font-size: 22px;
+    }
+  
+    .card-description {
+      font-size: 16px;
+    }
+  }
+  
+              </style>
+
+
+
+              <section class="vision-mission-container">
+                <!-- Vision Card -->
+                <div class="card vision-card">
+                  
+                    <i class="icon fa fa-eye"></i> <!-- Vision Icon -->
+                    <h3 class="card-title">Vision</h3>
+                 
+                  <p class="card-description">
+                    To drive the future of universal business for the next century through ensuring a sustainable and dynamic environment for business communities.
+                  </p>
+                </div>
+              
+                <!-- Mission Card -->
+                <div class="card mission-card">
+                 
+                    <i class="icon fa fa-bullhorn"></i> <!-- Mission Icon -->
+                    <h3 class="card-title">Mission Statement</h3>
+              
+                  <ul class="card-description">
+                    <li>To connect and inspire businesses around the world, driving tangible benefits for economies and communities through international collaboration, innovative solutions, and on-the-ground implementation.</li>
+                    <li>To foster the growth and development of the private sector, particularly in emerging markets, while championing the importance of small and medium-sized enterprises (SMEs) in the global economy.</li>
+                    <li>To bring companies and chambers together through membership locally, nationally and internationally to build the community for doing business universally.</li>
+                    <li>To strengthen capacity and networking to grow and invest in sustainable businesses and industries.</li>
+                  </ul>
+                </div>
+              </section>
+              
+
+           
+            <style>
+                .logo-section{
+                    padding:0 !important;
+                }
+                .jarallax-img {
+                    background-position: center bottom;
+                    background-size: cover; /* Ensures the image covers the entire area */
+                    background-repeat: no-repeat;
+                }                
+                
+            </style>
+              <!-- section begin -->
+              <section id="section-hero logo-section" class="jarallax text-light" style="padding: 0;">
+            	<img src="images/gen/omniverse.png" class="jarallax-img" alt="">
+				<div class="container " >
+                    <div class="row">
+                        <h1 class=" text-left mt-3 mb-4" style="text-align: center; font-size:25px;  margin-top:56px !important; font-weight:100">
+                            The Omniverse Chamber of Commerce has been Appointed as the official partner of the Bangladesh Embassy, Qatar to organize-   <span class="id-color"></span>
+                        </h1>
+                    </div>
+					<div class="row align-items-center mt-5" style="display: flex; justify-content:space-around">
+						<div class="col-10" style="padding:50px 0">
 							
 							<div class="d-flex sm-hide" style="justify-content:space-around">
-                                    <div class="h6 padding10 pt0 pb0"><i class="i_h3 fa fa-calendar-check-o id-color"></i>December 17th &nbsp;- &nbsp;  21th, 2024</div>
-                                    <!-- <div class="h6 padding10 pt0 pb0"><i class="i_h3 fa fa-user id-color"></i>12 Speakers</div> -->
-                                    <div class="h6 padding10 pt0 pb0"><i class="i_h3 fa fa-map-marker id-color"></i>Doha, Qatar</div>
+                                 
                                 </div>
 							
-							<h1 class="title-1 text-left mt-3 mb-2" style="text-align: center;">
-								Bangladesh Trade - Remittance Expo <br> & <br> Cultural Festival - Qatar <span class="id-color">2024</span>
+							<h1 class="title-1 text-left mt-3 mb-2" style="text-align: center; font-size: 47px; line-height:1.2">
+								Bangladesh Trade - Remittance Expo,  Cultural <br>
+                                <div><span style="font-size: 39px !important; ">Festival & Business-Investment Summit - Qatar <span class="id-color">2024</span></span></div>
 							</h1>
 							
 							<div class="spacer-single"></div>
-							
-							<div class="mb-3" style="display: flex; justify-content:center">
-                                <a href="#section-ticket" class="btn-custom text-white scroll-to">Get Ticket</a>
+                            <div class="col-8 d-flex sm-hide " style=" justify-content: space-around; margin: auto;">
+                                <div class="h6 padding10 pt0 pb0 text-center" style="font-size: 15px; display: flex; justify-content: center; align-items: center;  font-size:25px">
+                                    <i class="i_h3 fa fa-calendar-check-o id-color" style="font-size:25px"></i> December 17 - 21, 2024
+                                </div>
+                                <div class="h6 padding10 pt0 pb0 text-center" style="display: flex; justify-content: center; align-items: center; font-size:25px">
+                                    <i class="i_h3 fa fa-map-marker id-color" style="font-size:25px"></i> Doha, Qatar
+                                </div>
                             </div>
+                            
+                            
+							
+							
                             <div class="spacer-single"></div>
-							<div id="defaultCountdown" class="countdown-s2" ></div>
+							
 						</div>
+                        <div class="col-5">
+                            <div id="defaultCountdown" class="countdown-s2" ></div>
+                        </div>
+                        <div class="spacer-double"></div>
+
 						
-						<div class="col-lg-4 d-flex justify-content-start">
-							<img src="images/misc/man-7.png" class="img-responsive" alt="">
-						</div>
+						
 					</div>
-                    <div class="row justify-content-center gap-20">
-                        <div class="spacer-single d-flex justify-content-center align-items-center"></div>
-                        <div class="col-lg-2 text-center">
-                          <span style="font-size: 14px;"><span style="font-weight: bold;">Business Expo</span> Organized BY</span><br>
-                          <img src="/images/logo/vg.png" width="120px" style="margin-top: 20px;" alt="">
-                          <div class="spacer-single"></div>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                          <span style="font-size: 14px;"><span style="font-weight: bold;">Cultural Show</span> Organized BY</span><br>
-                          <img src="/images/logo/hss.png" width="110px" style="margin-top: 20px;" alt="">
-                          <div class="spacer-single"></div>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                          <span style="font-size: 14px;"><span style="font-weight: bold;">Business Summit</span> Organized BY</span><br>
-                          <img src="/images/logo/omni.jpg" width="140px" style="margin-top: 20px;" alt="">
-                          <div class="spacer-single"></div>
-                        </div>
-                      </div>
+
+                    <div class="row">
+                        
+                       <div class="col-md-4 d-flex " style="justify-content: start;" >
+                        <h1 class="title-1 text-left mt-3 mb-2" style="text-align: center; font-size: 30px; line-height:1.2">
+                            In Association With -  <br>
+                            
+                        </h1>
+                       </div> 
+                    </div>
+
+                    <div class="row ">
+                        <div class=" col-md-6 d-flex " style="justify-content: space-around; margin:40px auto 0  auto" >
+                            
+                            <div class="col-lg-2 text-center">
+                              
+                                <img src="/images/logo/qatar.png" width="250px"  alt="">
+                              
+                            </div>
+                            
+                            
+                            <div class="col-lg-4 text-center">
+                              
+                              
+                              <img src="/images/logo/hss.png" width="150px" style="margin-top: 18px;" alt="">  
+                              <div>
+                                <p style="font-size: 20px; font-weight:bold; ">Hello Superstar</p>
+                              </div>
+                            </div>
+                            
+                          </div>
+                    </div>
 
                       <div class="row justify-content-center gap-20">
                         <div class="d-flex justify-content-center align-items-center"></div>
@@ -181,6 +706,7 @@
                         
                       
                       </div>
+                      <div class="spacer-double"></div>
                       
 				</div>
             </section>
@@ -228,7 +754,7 @@
                 </section>
 						<!-- section begin -->
                         <section id="section-schedule" aria-label="section-services-tab" data-bgimage="url(images/bg/2.png) fixed center no-repeat">
-                            <div class="wm wm-border dark wow fadeInDown " style="color:#ec167f">EVENT &nbsp;  DETAILS</div>
+                            <div id="section_title" class="wm wm-border dark wow fadeInDown section_title" style="color:#ec167f; ">EVENT &nbsp;  DETAILS</div>
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
@@ -246,7 +772,7 @@
                                                     
                                                 </li>
                                                 <li data-link="#section-services-tab">
-                                                    <h3>Expo Closing  <span>Ceremony</span></h3>
+                                                    <h3>Cultural <span>Show</span></h3>
                                                     
                                                 </li>
                                                 <li data-link="#section-services-tab">
@@ -265,7 +791,7 @@
                                                               <div class="benefits-header"></div>
                                                             </div>
                                                             <div class="col-md-6">
-                                                              <img src="/images/gen/expo_vaune_LE_auto_x2.jpg" style="width: 100%; border-radius: 12px;" alt="Networking at Expo" class="benefit-image">
+                                                              <img src="/images/venue/trade.jpeg" style="width: 100%; border-radius: 12px;" alt="Networking at Expo" class="benefit-image">
                                                               <!-- Replace with actual image path -->
                                                             </div>
                                                             <div class="col-md-6 d-flex justify-content-center pb-4">
@@ -275,11 +801,11 @@
                                                                 </li>
                                                                 <li class="venue_item expo_venue_item text-center">
                                                                   <i class="benefit-icon fa fa-check-circle"></i>
-                                                                  <span>Venue: Raffels, Doha (Proposed)</span>
+                                                                  <span>Venue: Bangladesh MHM School Ground, Doha </span>
                                                                 </li>
                                                                 <li class="venue_item expo_venue_item text-center">
                                                                   <i class="benefit-icon fa fa-check-circle"></i>
-                                                                  <span>Date: 15, 16, 17 December, 2024</span>
+                                                                  <span>Date: 17, 18, 19 December, 2024</span>
                                                                 </li>
                                                                 <li class="venue_item expo_venue_item text-center">
                                                                     <i class="benefit-icon fa fa-check-circle"></i>
@@ -307,14 +833,14 @@
                                                         </div>
                                                         <div class="col-md-6 d-flex justify-content-center pb-4">
                                                           <ul class="list-unstyled d-flex justify-content-center align-items-start flex-column">
-                                                            <li><h2>Expo Closing Ceremony & Grand Concert</h2></li>
+                                                            <li><h2>Cultural Show </h2></li>
                                                             <li class="venue_item expo_venue_item text-center">
                                                               <i class="benefit-icon fa fa-check-circle"></i>
                                                               <span>Venue: ASIAN TOWN AMPHITHEATER, DOHA, QATAR</span>
                                                             </li>
                                                             <li class="venue_item expo_venue_item text-center">
                                                               <i class="benefit-icon fa fa-check-circle"></i>
-                                                              <span>Date: 17 December, 2024</span><br>
+                                                              <span>Date: 20 December, 2024</span><br>
                                                             </li>
                                                             <li>
                                                                 <i class="benefit-icon fa fa-check-circle"></i>
@@ -334,7 +860,7 @@
                                                           <div class="benefits-header"></div>
                                                         </div>
                                                         <div class="col-md-6">
-                                                          <img src="/images/gen/business_summit_venue_LE_auto_x2.jpg" style="border-radius: 10px;" alt="Networking at Expo" class="benefit-image">
+                                                          <img src="/images/venue/sumit.jpeg" style="border-radius: 10px;" alt="Networking at Expo" class="benefit-image">
                                                           <!-- Replace with actual image path -->
                                                         </div>
                                                         <div class="col-md-6 d-flex justify-content-center pb-4">
@@ -342,11 +868,11 @@
                                                             <li><h2> Business Sumit Event :</h2></li>
                                                             <li>
                                                                 <i class="benefit-icon fa fa-check-circle"></i>
-                                                                <span>Venue: St. Regis Doha or in Cruise/Ship</span><br>
+                                                                <span>Venue: Sheraton Grand Doha Resort </span><br>
                                                             </li>
                                                             <li class="venue_item expo_venue_item text-center">
                                                               <i class="benefit-icon fa fa-check-circle"></i>
-                                                              <span>Date: 18 December, 2024 </span><br>
+                                                              <span>Date: 21 December, 2024 </span><br>
                                                              
                                                               
                                                             </li>
@@ -379,7 +905,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                            <h1 class="mini_title">Why you should Join Event</h1>
+                            <h1 class="mini_title">Why you should Join </h1>
                             <div class="separator"><span><i class="fa fa-square"></i></span></div>
                             <div class="spacer-single" style="margin-bottom: 100px;"></div>
                         </div>
@@ -397,7 +923,7 @@
 
                         <div class="col-lg-4 wow fadeIn" data-wow-delay=".25s">
                             <div class="box-number square">
-                                <i class="bg-color hover-color-2 fa fa-lightbulb-o text-light"></i>
+                                <i class="bg-color hover-color-2 fa fa-music text-light"></i>
                                 <div class="text">
                                     <h3><span>CULTURAL SHOW </span></h3>
                                     <p>Experience captivating performances and interactive entertainment segments designed to inspire and energize. Engage with live music, cultural shows, and immersive activities, ensuring a vibrant and memorable experience for all attendees.</p>
@@ -455,7 +981,17 @@
                                 </div>
                             </div>
                         </div>
-						
+                        <div class="col-lg-4 wow fadeIn" data-wow-delay="1.25s">
+                            <div class="box-number square">
+                                <i class="bg-color hover-color-2 fas fa-lightbulb text-light"></i>
+                                <div class="text">
+                                    <h3><span>KNOWLEDGE SHARING </span></h3>
+                                    <p>
+                                        Chance to participate in discussions on the latest treands, challenges, and innovations in business including business ooportunity with investment fesiblities.    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>	
 
                     </div>
                 </div>
@@ -514,55 +1050,7 @@
 
 
 			
-			<!-- section begin -->
-            <section id="section-sponsors" data-bgimage="url(images/bg/3.png) fixed center no-repeat">
-                <div class="wm wm-border dark wow fadeInDown ">SPONSORS</div>
-                <div class="container">
-                    <div class="row d-flex justify-content-center align-items-center" >
-                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                            <h1 style="" class="mini_title">Our Official Sponsors</h1>
-                            <div class="separator"><span><i class="fa fa-square"></i></span></div>
-                            <div class="spacer-single"></div>
-                        </div>
-
-                        <div class="col-md-10 text-center wow fadeInUp " style="margin-top:30px">
-                            <!-- <h3>Gold Sponsors</h3> -->
-                            <div class="spacer-single"></div>
-                            <div class="d-flex" style="    justify-content: center;
-                            background-size: cover;
-                            column-gap: 80px;
-                            flex-wrap: wrap;
-                            row-gap: 50px;">
-                                <img src="images/logo/1.png" alt="" class="grey-hover">
-                                <img src="images/logo/9.png" alt="" class="grey-hover">
-                                <img src="images/logo/10.png" alt="" class="grey-hover">
-                                <img src="images/logo/2b.png" alt="" class="grey-hover">
-                                <img src="images/logo/3b.png" alt="" class="grey-hover">
-                                <img src="images/logo/4.png" alt="" class="grey-hover">
-                            </div>
-                            <div class="spacer-double"></div>
-
-                            <!-- <h3>Silver Sponsors</h3> -->
-                            <div class="spacer-single"></div>
-                            <div class="d-flex" style="    justify-content: center;
-                            background-size: cover;
-                            column-gap: 80px;
-                            flex-wrap: wrap;
-                            row-gap: 50px;">
-                                <img src="images/logo/5.png" alt="" class="grey-hover">
-                                <img src="images/logo/6.png" alt="" class="grey-hover">
-                                <img src="images/logo/7.png" alt="" class="grey-hover">
-                                <img src="images/logo/8.png" alt="" class="grey-hover">
-                            </div>
-                          
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- section close -->
-
-
-           
+	
 			
 		
 			
@@ -573,13 +1061,13 @@
                     <!-- gallery item -->
                     <div class="item residential">
                         <div class="picframe">
-                            <a href="https://versatilo.group/wp-content/uploads/2023/05/IMG_8282.jpg"" title="Event Photo">
+                            <a href="/images/gallery/1.jpeg"" title="Event Photo">
                                 <span class="overlay">
                                     <span class="pf_text">
                                     <span class="project-name">View Image</span>
                                     </span>
                                 </span>
-                                <img src="https://versatilo.group/wp-content/uploads/2023/05/IMG_8282.jpg"" alt="">
+                                <img src="/images/gallery/1.jpeg"" alt="">
                             </a>
                         </div>
                     </div>
@@ -588,13 +1076,13 @@
                     <!-- gallery item -->
                     <div class="item hospitaly">
                         <div class="picframe">
-                            <a href="https://versatilo.group/wp-content/uploads/2023/05/IMG_8051.jpg" title="Event Photo">
+                            <a href="/images/gallery/5.png" title="Event Photo">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">View Image</span>
                                     </span>
                                 </span>
-                                <img src="https://versatilo.group/wp-content/uploads/2023/05/IMG_8051.jpg" alt="">
+                                <img src="/images/gallery/5.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -603,13 +1091,13 @@
                     <!-- gallery item -->
                     <div class="item hospitaly">
                         <div class="picframe">
-                            <a href="https://versatilo.group/wp-content/uploads/2023/05/IMG_8333.jpg" title="Event Photo">
+                            <a href="/images/gallery/2.jpeg" title="Event Photo">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">View Image</span>
                                     </span>
                                 </span>
-                                <img src="https://versatilo.group/wp-content/uploads/2023/05/IMG_8333.jpg" alt="">
+                                <img src="/images/gallery/2.jpeg" alt="">
                             </a>
                         </div>
                     </div>
@@ -618,13 +1106,13 @@
                     <!-- gallery item -->
                     <div class="item residential">
                         <div class="picframe">
-                            <a href="https://versatilo.group/wp-content/uploads/2023/05/IMG_8333.jpg" title="Event Photo">
+                            <a href="/images/gallery/4.jpeg" title="Event Photo">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">View Image</span>
                                     </span>
                                 </span>
-                                <img src="https://versatilo.group/wp-content/uploads/2023/05/IMG_8333.jpg" alt="">
+                                <img src="/images/gallery/4.jpeg" alt="">
                             </a>
                         </div>
                     </div>
@@ -983,6 +1471,33 @@
             else sticky.removeClass('fixed');
             });
         })
+
+
+        let currentIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+const dots = document.querySelectorAll('.dot');
+
+function showTestimonial(index) {
+  testimonials.forEach((testimonial, i) => {
+    testimonial.classList.remove('active');
+    dots[i].classList.remove('active');
+  });
+
+  testimonials[index].classList.add('active');
+  dots[index].classList.add('active');
+}
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => showTestimonial(index));
+});
+
+// Automatically switch testimonials every 5 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  showTestimonial(currentIndex);
+}, 5000);
+
+
 
     </script>
 	

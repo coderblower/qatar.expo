@@ -1,0 +1,32 @@
+# Disable Caching for HTML Files
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
+
+# Enable Caching for Static Assets (e.g., CSS, JS, Images)
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|woff|woff2|ttf|eot|otf|json|pdf|ico)$">
+    # Cache assets for 1 week
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# Force Cache Revalidation for Static Assets (Optional)
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|woff|woff2|ttf|eot|otf|json|pdf|ico)$">
+    Header set Expires "Thu, 15 Apr 2025 20:00:00 GMT"
+</FilesMatch>
+
+# Add Cache-Control headers for all assets
+<IfModule mod_headers.c>
+    # Set caching to 1 month for images, CSS, JS (static assets)
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|css|js|woff|woff2|ttf|eot|otf|json|pdf|ico)$">
+        Header set Cache-Control "max-age=2592000, public, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# Disable Caching for Dynamic PHP Pages (if any)
+<FilesMatch "\.php$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>

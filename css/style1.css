@@ -276,25 +276,95 @@ footer {
     
 }
 
+#mainmenu li li {
+    /* width:250px; */
+}
+
+#mainmenu li li a,
+#mainmenu li li li a {
+    font-size: 13px; /* Adjust this as needed */
+    padding: 10px 15px;
+    
+    /* Adds padding to the left and right */
+}
+
+header.header-mobile #mainmenu li span.active,header.header-mobile #mainmenu li span , header.header-mobile #mainmenu > li > span, header.header-mobile #mainmenu > li > li > span {
+    background-color: #000 !important;
+}
+
+
+
+
+
 /* Styles for screens up to 700px */
 @media (max-width: 700px) {
     /* Add your styles for small screens here */
-    .box-number .text{
-        margin-left:0px
-    }
-}
+    
 
 
 
 /* Styles for screens up to 900px */
 @media (max-width: 900px) {
     /* Add your styles for medium-small screens here */
-    .box-number .text{
-        margin-left:0px
-    }  
+   
+    #section_title {
+        font-size: 70px !important; 
+    }
+   
+   
 }
+
+@media (min-width: 900px) {
+    /* Add your styles for medium-small screens here */
+   
+    #section_title {
+        font-size: 70px !important; 
+    }
+   
+   
+}
+
 /* Styles for screens up to 1200px */
 @media (max-width: 1200px) {
     /* Add your styles for medium-large screens here */
+    /* #section_title {
+        font-size: 30px !important; 
+    } */
+    
+    #mainmenu {
+        margin-right: 120px !important;
+    }
 
+}
+
+
+@media (min-width: 1200px) {
+    /* Add your styles for medium-large screens here */
+
+   
+
+    #mainmenu {
+        margin-right: 120px !important;
+    }
+
+}
+
+
+/* Style for the main dropdown menu */
+#mainmenu ul.dropdown {
+    position: absolute;
+    
+    top: 100%; /* Position it below the parent item */
+    display: none; /* Hide the dropdown initially */
+}
+
+/* Show the dropdown on hover */
+#mainmenu li:hover > ul.dropdown {
+    display: block;
+}
+
+/* Optional: Adjust further submenus, if needed */
+#mainmenu ul.dropdown ul.dropdown {
+    left: 200px; /* Additional left offset for nested dropdowns */
+    top: 0;
 }
