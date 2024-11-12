@@ -144,15 +144,13 @@ header.transparent{
 }
 
 .logo{
-    width: 140px;
-    transform: translate(60px, -13px) scale(.9);
-    transition: transform .5s ease-in-out;
+    width: 240px;
+  
 }
 
 
 header.smaller:not(.header-bottom):not(.side-header) .logo{
-    transform: translate(60px, -19px) scale(.8); 
-    transition: transform .5s ease-in-out;
+    width: 100px;
 }
 .pricing-s1 .top .price b {
     font-size: 38px;
