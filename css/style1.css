@@ -1,6 +1,17 @@
+/* Define Figtree as the primary font */
+body {
+    font-family: 'Figtree', sans-serif;
+}
+h1, h2, h3, p {
+    font-family: 'Figtree', sans-serif;
+}
+
+
+
 #jarallax-container-0 {
     position: relative; /* Ensure the pseudo-element stays within the container */
   }
+ 
   
   #jarallax-container-0::before {
     content: "";
