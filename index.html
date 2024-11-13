@@ -62,7 +62,7 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="index.html">
-                                <img class="logo" style="width: 140px; margin-top: 20px " src="/images/logo/omni.jpg" alt="">
+                                <img class="logo" style="  " src="/images/logo/omni.jpg" alt="">
                             </a>
                         </div>
                         <!-- logo close -->
@@ -121,45 +121,70 @@
         <div id="content" class="no-bottom no-top">
 
             <style>
-                #news-updates {
-                    padding: 50px 20px;
-                    background-color: #f9f9f9;
-                  }
-                  
-                  .container {
-                    width: 80%;
-                    margin: 0 auto;
-                    text-align: center;
-                  }
-                  
-                  .section-title {
-                    font-size: 2em;
-                    font-weight: bold;
-                    margin-bottom: 20px;
-                    color: #333;
-                  }
-                  
-                  /* News Ticker */
-                  .news-ticker {
-                    background-color: #333;
-                    color: #fff;
-                    font-size: 1.2em;
-                    padding: 10px;
-                    margin-bottom: 40px;
-                    overflow: hidden;
-                  }
-                  
-                 
-                 
-                  
-                  .news-blog {
-                    display: flex;
-                    justify-content: space-around;
-                    margin-top: 40px;
-                  }
-                  
-       
+              #news-updates {
+                padding: 50px 20px;
+                background-color: #f9f9f9;
+              }
+              
+          
+              
+              .section-title {
+                font-size: 2em;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #333;
+              }
+              
+              /* News Ticker */
+              .news-ticker {
+                color: #fff;
+                font-size: 1.2em;
+                padding: 3px;
+                overflow: hidden;
+              }
+              
              
+             
+              
+              .news-blog {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 40px;
+              }
+              
+              .container-fluid.ticker_fluid {
+                 /* Background color for better contrast */
+                 background-color: #1e7c9e;
+                 padding: 10px;
+                 overflow: hidden; 
+              }
+              
+              .news-ticker {
+                overflow: hidden;
+                white-space: nowrap;
+              }
+              
+              .scrolling-text {
+                display: inline-block;
+                color: #fff; /* Text color */
+                white-space: nowrap;
+                animation: scroll-left 20s linear infinite;
+              }
+              
+              .scrolling-text span {
+                display: inline-block;
+                padding-right: 50px; /* Space between repetitions */
+              }
+              
+              @keyframes scroll-left {
+                0% {
+                  transform: translateX(0);
+                }
+                100% {
+                  transform: translateX(-50%);
+                }
+              }
+                  
          
             
                   
@@ -171,19 +196,21 @@
               <!-- section begin -->
               <section id="section-hero" class="" style="background-color: #fff;">
                 <section id="news-updates" style="padding: 0;">
-                    <div class="container-fluid">
-                      
-                      <!-- News Ticker -->
-                      <div class="news-ticker">
-                        <marquee behavior="scroll" direction="left" class="scrolling-text" scrollamount="3" >
-                            📅 Investment & Business Summit, Qatar-2024 - A global event shaping the future of international business. &nbsp;&nbsp;
-                            📢 TOCC's New Partnership Initiative - A groundbreaking program to support small businesses across the globe. &nbsp;&nbsp;
-                            🌍 TOCC Expands Global Trade Network - Strengthening economic ties and fostering global trade. &nbsp;&nbsp;
-                            🔍 Industry Insights: Trends in Global Trade for 2024 - A comprehensive report on the future of international markets.
-                          </marquee>
+                  <div class="container-fluid ticker_fluid" style="">
+                    <!-- News Ticker -->
+                    <div class="news-ticker">
+                      <div class="scrolling-text">
+                        <span>📅 Investment & Business Summit, Qatar-2024 - A global event shaping the future of international business. &nbsp;&nbsp; 📢 TOCC's New Partnership Initiative - A groundbreaking program to support small businesses across the globe. &nbsp;&nbsp;
+                        🌍 TOCC Expands Global Trade Network - Strengthening economic ties and fostering global trade. &nbsp;&nbsp;
+                        🔍 Industry Insights: Trends in Global Trade for 2024 - A comprehensive report on the future of international markets.</span>
+                        <span>📅 Investment & Business Summit, Qatar-2024 - A global event shaping the future of international business. &nbsp;&nbsp; 📢 TOCC's New Partnership Initiative - A groundbreaking program to support small businesses across the globe. &nbsp;&nbsp;
+                        🌍 TOCC Expands Global Trade Network - Strengthening economic ties and fostering global trade. &nbsp;&nbsp;
+                        🔍 Industry Insights: Trends in Global Trade for 2024 - A comprehensive report on the future of international markets.</span>
                       </div>
-                    
                     </div>
+                  </div>
+                  
+                  
                   </section>
 				<div class="container">
 					<div class="row align-items-center mt-5" style="display: flex; justify-content:space-around">
@@ -202,74 +229,74 @@
 
             <style>
                 /* Section Styling */
-#about-tocc {
-  background: linear-gradient(135deg, #6f21c2, #0a9396);
-  color: #ffffff;
-  padding: 50px 20px;
-  font-family: Arial, sans-serif;
-}
-
-#about-tocc .container {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  padding: 40px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-#about-tocc .title {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    
-    padding: 10px 20px;
-    line-height: 2em;
-    border-radius: 8px;
-    text-align: center; /* Center text */
-    margin-left: auto; /* Center the title block horizontally */
-    margin-right: auto;
-    
-  }
-  
-#about-tocc .content-wrapper h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #cae9ff;
-}
-
-#about-tocc .content-wrapper p {
-    font-size: 1.2em;
-    line-height: 1.4;
-    color: #e0fbfc;
-    text-align: justify;
-  }
-
-/* Decorative Icon or Border */
-
-
-/* Animation for a subtle effect */
-#about-tocc .container:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-}
-
+                #about-tocc {
+                  background: linear-gradient(135deg, #6f21c2, #0a9396);
+                  color: #ffffff;
+                  padding: 50px 20px;
+                  font-family: Arial, sans-serif;
+                }
+                
+                #about-tocc .container {
+                  max-width: 900px;
+                  margin: 0 auto;
+                  text-align: center;
+                  border-radius: 15px;
+                  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                  padding: 40px;
+                  background: rgba(255, 255, 255, 0.1);
+                }
+                
+                #about-tocc .title {
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    color: #ffffff;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    
+                    padding: 10px 20px;
+                    line-height: 2em;
+                    border-radius: 8px;
+                    text-align: center; /* Center text */
+                    margin-left: auto; /* Center the title block horizontally */
+                    margin-right: auto;
+                    
+                  }
+                  
+                #about-tocc .content-wrapper h1 {
+                  font-size: 2em;
+                  margin-bottom: 20px;
+                  font-weight: bold;
+                  color: #cae9ff;
+                }
+                
+                #about-tocc .content-wrapper p {
+                    font-size: 1.2em;
+                    line-height: 1.4;
+                    color: #e0fbfc;
+                    text-align: justify;
+                  }
+                
+                /* Decorative Icon or Border */
+                
+                
+                /* Animation for a subtle effect */
+                #about-tocc .container:hover {
+                  transform: scale(1.02);
+                  transition: transform 0.3s ease;
+                }
+                
             </style>
 
             <section style="padding: 0;">
                 
                 <section id="about-tocc">
-                    <div class="title " style="margin: auto;">Introduction to TOCC’s Mission</div>
+                    <!-- <div class="title " style="margin: auto;">Introduction to TOCC’s Mission</div> -->
                     <div class="container">
                         
                       <div class="content-wrapper">
                         <i class="fas fa-globe" style="font-size: 67px; margin-bottom:5px; margin-bottom:10px "></i>
-                        <h1>About The Omniverse Chamber of Commerce (TOCC)</h1>
+                        <h1>The Omniverse Chamber of Commerce (TOCC)</h1>
                         <p>
                           The Omniverse Chamber of Commerce (TOCC) is a dynamic, globally connected organization committed to promoting economic growth through international collaboration. TOCC serves as a vital link between businesses, governments, and the public, providing essential support that helps drive private sector growth and international trade.
                         
@@ -284,81 +311,81 @@
 
             <style>
 
-                #testimonials {
-                    padding: 50px 20px;
-                    background-color: #f7f7f7;
-                  }
-                  
-                  .testimonial-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                  }
-                  
-                  .carousel {
-                    position: relative;
-                    max-width: 600px;
-                    background-color: #ffffff;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                    padding: 30px;
-                    text-align: center;
-                    overflow: hidden;
-                  }
-                  
-                  .testimonial {
-                    display: none;
-                  }
-                  
-                  .testimonial.active {
-                    display: block;
-                  }
-                  
-                  .testimonial-image img {
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    margin-bottom: 20px;
-                  }
-                  
-                  .testimonial-text {
-                    font-size: 1.2em;
-                    font-style: italic;
-                    color: #555555;
-                    margin-bottom: 20px;
-                  }
-                  
-                  .testimonial-author {
-                    font-weight: bold;
-                    color: #333333;
-                    font-size: 1em;
-                  }
-                  
-                  .carousel-dots {
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 20px;
-                  }
-                  
-                  .dot {
-                    height: 10px;
-                    width: 10px;
-                    margin: 0 5px;
-                    background-color: #bbb;
-                    border-radius: 50%;
-                    display: inline-block;
-                    transition: background-color 0.3s ease;
-                    cursor: pointer;
-                  }
-                  
-                  .dot.active {
-                    background-color: #333;
-                  }
-                  
-                  
-            </style>
+              #testimonials {
+                  padding: 50px 20px;
+                  background-color: #f7f7f7;
+                }
+                
+                .testimonial-container {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                }
+                
+                .carousel {
+                  position: relative;
+                  max-width: 600px;
+                  background-color: #ffffff;
+                  border-radius: 10px;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  padding: 30px;
+                  text-align: center;
+                  overflow: hidden;
+                }
+                
+                .testimonial {
+                  display: none;
+                }
+                
+                .testimonial.active {
+                  display: block;
+                }
+                
+                .testimonial-image img {
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  margin-bottom: 20px;
+                }
+                
+                .testimonial-text {
+                  font-size: 1.2em;
+                  font-style: italic;
+                  color: #555555;
+                  margin-bottom: 20px;
+                }
+                
+                .testimonial-author {
+                  font-weight: bold;
+                  color: #333333;
+                  font-size: 1em;
+                }
+                
+                .carousel-dots {
+                  display: flex;
+                  justify-content: center;
+                  margin-top: 20px;
+                }
+                
+                .dot {
+                  height: 10px;
+                  width: 10px;
+                  margin: 0 5px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.3s ease;
+                  cursor: pointer;
+                }
+                
+                .dot.active {
+                  background-color: #333;
+                }
+                
+                
+          </style>
 
             <section id="testimonials" style="min-height:500px; position:relative;">
                 <div class="testimonial-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
@@ -726,7 +753,7 @@
                                 <div class="wm wm-border dark wow fadeInDown" style="font-size:60px; top: -50px; left:-120px">OVERVIEW</div>
                                 <h2 class="title-1"> <span class="id-color" style="font-weight: 500; font-size:1.2em">Celebrating 50 Years</span> of Bangladesh-Qatar Diplomatic Relations</h2>
                                 <p>
-                                    The Bangladesh Trade-Remittance Expo and Cultural Festival-2024 marks the 50th anniversary of diplomatic relations between Bangladesh and Qatar. Held from December 15-18, 2024 in Doha, the event celebrates Bangladesh's Victory Day and Qatar's National Day. Co-hosted by the Bangladesh Embassy and Hello Superstars, UK, and managed by Ad Point, it features a Trade-Real Estate & Remittance Expo, a Grand Concert, and an Investment & Business Summit. The festival promotes bilateral trade, investment, and cultural exchange, with participation from Bangladeshi companies in garments, food, real estate, and tourism, fostering future cooperation between the two nations.
+                                    The Bangladesh Trade-Remittance Expo and Cultural Festival-2024 marks the 50th anniversary of diplomatic relations between Bangladesh and Qatar. Held from December 17-21, 2024 in Doha, the event celebrates Bangladesh's Victory Day and Qatar's National Day. Organized By BAgnladesh Embassy, Qatar. Supported by Hello Stars , The Universe Chamber of Commerce & VERSATILO GROUP. <br>It features a Trade-  Remittance Expo, a Grand Concert, and an Investment & Business Summit. The festival promotes bilateral trade, investment, and cultural exchange, with participation from Bangladeshi companies in garments, food, real estate, and tourism, fostering future cooperation between the two nations.
                                 </p>
 								
 								<div class="spacer10"></div>
@@ -790,7 +817,7 @@
                                                             <div class="col-md-6 d-flex justify-content-center pb-4">
                                                               <ul class="list-unstyled d-flex justify-content-center align-items-start flex-column">
                                                                 <li>
-                                                                  <h2>Trade-Real Estate & Remittance Expo</h2>
+                                                                  <h2>Trade- Remittance Expo</h2>
                                                                 </li>
                                                                 <li class="venue_item expo_venue_item text-center">
                                                                   <i class="benefit-icon fa fa-check-circle"></i>
@@ -1069,13 +1096,13 @@
                     <!-- gallery item -->
                     <div class="item hospitaly">
                         <div class="picframe">
-                            <a href="/images/gallery/5.png" title="Event Photo">
+                            <a href="/images/gallery/concert.avif" title="Event Photo">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">View Image</span>
                                     </span>
                                 </span>
-                                <img src="/images/gallery/5.png" alt="">
+                                <img src="/images/gallery/concert.avif" alt="">
                             </a>
                         </div>
                     </div>
@@ -1084,13 +1111,13 @@
                     <!-- gallery item -->
                     <div class="item hospitaly">
                         <div class="picframe">
-                            <a href="/images/gallery/2.jpeg" title="Event Photo">
+                            <a href="/images/gallery/5.png" title="Event Photo">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">View Image</span>
                                     </span>
                                 </span>
-                                <img src="/images/gallery/2.jpeg" alt="">
+                                <img src="/images/gallery/5.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -1266,13 +1293,24 @@
                 </div>
             </section>
 
-
+<style>
+  footer p{
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.2;
+    color: #ddd;
+  }
+  footer h3, h4,h5,h6{
+    text-align: start;
+  }
+</style>
             <!-- footer begin -->
         <footer class="" style="padding: 50px 0 30px;">
           <div class="container">
             <div class="row align-items-middle">
               <div class="col-md-3 d-flex justify-content-center align-items-end">
-                <img src="images/logo/logo.png" style="width: 50px; transform:scale(2.5) translate(0px,5px)" class="logo-small" alt="">
+                
+                <img src="/images/logo/omni.jpg" style="width:200px" class="logo-small" alt="">
                 <br>
               </div>
               <div class="col-md-9">
@@ -1280,22 +1318,22 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div>
-                      <h3>Nirab Hasan </h3>
-                      <p>Coordinator & Event Partner</p>
-                      <p>Bangladesh Trade-Remittance Expo-2024, Qatar.</p>
-                      <p>COO, Hello Superstars </p>
-                      <p>Mobile: 01722222322</p>
-                      <p>E-mail: nirab27@gmail.com</p>
+                      <h3 style="text-align: start;">Corporate Office </h3>
+                      <p>37th Floor,1 Canada Square,</p>
+                      <p>Canary Wharf, London, England, E14 5DY</p>
+                      <p>Email: info@tocc.world</p>
+                      
+                      
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="left_lines">
-                      <h3>Aftab Bin Tomiz</h3>
-                      <p> Event & Marketing Partner</p>
-                      <p>Bangladesh Trade-Remittance Expo-2024, Qatar.</p>
-                      <p>COO, Adpoint </p>
-                      <p>Mobile: 01711071701</p>
-                      <p>E-mail: adpointbd@gmail.com</p>
+                      <h3>Gazelle Mohsenzadeh</h3>
+                      <h4 style="font-size: 1em; line-height:1px">Executive Secretary</h4>
+                      
+                       
+                      <p>Whatsapp: +44 7508 746188 </p>
+                      
                     </div>
                   </div>
                 </div>
@@ -1303,7 +1341,7 @@
             </div>
             <div class="row">
               <footer id="footer">
-                <center>&copy; Copyright 2024 - Qatar - Expo 2024 &nbsp;&nbsp; Website Template by <span class="id-color">Versatilo Group.</span>
+                <center>&copy; Copyright 2024 - @tocc.world 2024 &nbsp;&nbsp; Website Template by <span class="id-color">Versatilo Group.</span>
                 </center>
               </footer>
             </div>
@@ -1325,12 +1363,16 @@
         <div class="row">
           <div class="">
             <div>
-              <h3>Nirab Hasan </h3>
-              <p>Coordinator & Event Partner</p>
-              <p>Bangladesh Trade-Remittance Expo-2024, Qatar.</p>
+              
+
+
+              <h3></h3>
+              <p>Corporate Office: </p>
+              <p>37th Floor,1 Canada Square, </p>
               <p>COO, Hello Superstars </p>
               <p>Mobile: 01722222322</p>
               <p>E-mail: nirab27@gmail.com</p>
+
             </div>
           </div>
           <div class="mt-5">

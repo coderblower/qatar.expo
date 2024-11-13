@@ -131,6 +131,11 @@ h1, h2, h3, p {
 
 header.smaller:not(.header-bottom):not(.side-header){
     background: #fff;
+    height: 90px;
+}
+
+header.smaller:not(.header-bottom):not(.side-header) .logo{
+margin-top: 10px;
 }
 
 
@@ -144,13 +149,13 @@ header.transparent{
 }
 
 .logo{
-    width: 240px;
+    width: 140px;
   
 }
 
 
 header.smaller:not(.header-bottom):not(.side-header) .logo{
-    width: 100px;
+    width: 150px !important;
 }
 .pricing-s1 .top .price b {
     font-size: 38px;
@@ -288,11 +293,11 @@ footer {
 #mainmenu li li {
     /* width:250px; */
 }
-
+header.smaller:not(.header-bottom):not(.side-header) li li a, header.smaller:not(.header-bottom):not(.side-header) li li li a, 
 #mainmenu li li a,
 #mainmenu li li li a {
-    font-size: 13px; /* Adjust this as needed */
-    padding: 10px 15px;
+    font-size: 13px !important; /* Adjust this as needed */
+    padding: 10px 15px !important;
     
     /* Adds padding to the left and right */
 }
