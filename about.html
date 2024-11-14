@@ -181,10 +181,20 @@
     left: 0;
   }
 
+  .styled-quote::after {
+    content: "”";
+    font-size: 150px;
+    color: #f7f7f7;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+  }
+
   .quote-author {
     margin-top: 15px;
     font-size: 18px;
     color: #555;
+    line-height: 1em;
   }
 </style>
         </style>
@@ -215,7 +225,7 @@
                 <div class="row justify-content-center">
                   <div class="col-md-8">
                     <blockquote class="styled-quote">
-                      We strongly believe that the day is not too far when there will be arbitration on business disputes between  entities in the Mars colony and earth  to be resolved by the   Omniverse Chamber of Commerce.” <span style="font-weight: bold;  font-size:1.3em; padding:0; font-style:normal"> Do Not Dream Big - Dream Giant </span>
+                      We strongly believe that the day is not too far when there will be arbitration on business disputes between  entities in the Mars colony and earth  to be resolved by the   Omniverse Chamber of Commerce. <span style="font-weight: bold;  font-size:1.3em; padding:0; font-style:normal"> Do Not Dream Big - Dream Giant </span>
                       
                       
                     </blockquote>
@@ -230,7 +240,7 @@
                       <div>
                         <span> </span><p class="quote-author" style="width: 320px; text-align:start"> <strong style="font-size: 1.2em;"><span style="display: block;">Dr. Kamrul Ahsan, FRSA</span></strong> 
                           <span>PhD, PGDip,  MBA (UK) </span>
-                           <span style="display:block;">Founder</span> 
+                           <span style="display:block; font-weight:500">Founder</span> 
                            <span style="font-weight: bold;"> Omniverse Chamber of Commerce </span>
                           
     
@@ -252,8 +262,8 @@
             <style>
 
                 /* Basic Section Styling */
-.section {
-    padding: 3rem 2rem;
+.section-principles {
+    padding: 3rem 6rem;
     
     margin: auto;
     color: #333;
@@ -279,7 +289,7 @@
   }
   .card {
     background-color: #f5f5f5;
-    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(50% - 1.5rem); /* Two cards per row */
@@ -310,6 +320,40 @@
   
   p{ text-align: justify;}
 
+  @media (max-width: 1250px) {
+    
+    .section-principles{
+      padding: 3rem 3rem;
+    }
+    .principle-cards{
+      
+    }
+
+    
+}
+
+
+  @media (max-width: 950px) {
+    .section-principles{
+      
+    }
+    .card {
+      flex: 1 1 100%; /* Two cards per row */
+      max-width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 750px) {
+  .section-principles{
+    padding: 3rem 2rem;
+  }
+  .card {
+   flex-direction: column;
+  }
+}
+
 
   
             </style>
@@ -320,7 +364,7 @@
         <div class="row">
             <div class="col-12">
                 <section class="section introduction" style="background-color: #fff; margin: 30px 0; border-radius: 10px;">
-                    <p style="font-size: 1.5em;">The <strong> Omniverse chamber of commerce (TOCC),</strong> registered in England &Wales as limited by guarantee  is an association and network of global renowned  business people and entities designed to promote their business, innovation globally. The name "Omniverse" depicts the futuristic vision of connecting other planet's (Human colony) businessmen or entities with us (Earth) in the future.</p>
+                    <p style="font-size: 1.5em; padding:0 2rem">The <strong> Omniverse chamber of commerce (TOCC),</strong> registered in England &Wales as limited by guarantee  is an association and network of global renowned  business people and entities designed to promote their business, innovation globally. The name "Omniverse" depicts the futuristic vision of connecting other planet's (Human colony) businessmen or entities with us (Earth) in the future.</p>
                   </section>
             </div>
         </div>
@@ -329,74 +373,12 @@
   
   <!-- Chamber's Principles Section -->
 <div>
-    <!-- <div class="container">
+
+
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <section class="section principles" style="background-color: #ffffff;">
-                    <h2>Chamber's Principles</h2>
-                    <div class="principle-cards">
-                      <div class="card">
-                        <div class="card_icon">
-                            <i class="fas fa-users"></i>
-
-                        </div>
-                        <div>
-                        <h3>Global Collaboration</h3>
-                        <p>Fostering connections across industries and borders, creating a unified business network that spans the world and beyond.</p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card_icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div>
-                            <h3>Innovation First</h3>
-                            <p>Promoting cutting-edge solutions, ideas, and advancements that drive global and interplanetary commerce forward.</p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div  class="card_icon">
-                            <i class="fas fa-balance-scale"></i>
-
-                        </div>
-                        <div>
-                            <h3>Ethical Standards</h3>
-                            <p>Upholding transparency, integrity, and accountability in all member practices and interactions.</p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div  class="card_icon">
-                            <i class="fas fa-chart-line"></i>
-
-                        </div>
-                        <div>
-                            <h3>Sustainable Growth</h3>
-                        <p>Advocating for environmentally conscious and sustainable business practices that benefit both local and global communities.</p>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div  class="card_icon">
-                            <i class="fas fa-eye"></i>
-
-
-                        </div>
-                        <div>
-                            <h3>Future-Oriented Vision</h3>
-                        <p>Preparing for a future where commerce is interplanetary, aiming to create a network that can adapt and grow with technological progress.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-            </div>
-        </div>
-    </div> -->
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <section class="section principles" style="background-color: #ffffff;">
+                <section class="section-principles principles" style="background-color: #ffffff;">
                     <h2>Chamber's Principles</h2>
                     <div class="principle-cards">
                       <div class="card">
