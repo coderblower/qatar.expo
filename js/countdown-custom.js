@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
         $(function () {
-            $('#defaultCountdown').countdown({until: new Date(2024, 11, 11, 23, 3)}); // year, month, date, hour
+            $('#defaultCountdown').countdown({until: new Date(2024, 11, 16, 23, 59)}); // year, month, date, hour
         });
 });		
 
@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
 var elm = $('#open_contact'); 
 var target = $('#de-extra-wrap')
 elm.on('click', function(e){
-    console.log(this)
+  
     e.preventDefault();
     if(target.hasClass('open')){
     

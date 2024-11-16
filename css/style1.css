@@ -91,7 +91,7 @@ h1, h2, h3, p {
 
 .wm.dark.wm-border{
     font-size: 110px;
-    color: green;
+    color: var(--primary-color-1);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(255,255,255,.2);
     /* width: 150px; */
