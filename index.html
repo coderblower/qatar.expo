@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="revolution/css/navigation.css" type="text/css">
     <link rel="stylesheet" href="css/rev-settings.css" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+
     <!-- custom font -->
     <link rel="stylesheet" href="css/font-style.css" type="text/css">
   </head>
@@ -167,8 +170,8 @@
               .scrolling-text {
                 display: inline-block;
                 color: #fff; /* Text color */
-                white-space: nowrap;
-                animation: scroll-left 20s linear infinite;
+                white-space: nowrap; 
+                animation: scroll-left 80s linear infinite;
               }
               
               .scrolling-text span {
@@ -305,6 +308,61 @@
                       </div>
                     </div>
                   </section>
+                  
+              <section id="about-us" style="min-height: 500px; padding: 40px 20px;">
+
+               
+
+
+                <div class="container">
+                  <div class="row">
+                                        <!-- Stack Images -->
+                                      <!-- Stack Images -->
+                 <!-- Stack Images -->
+            <!-- Stack Images -->
+              <div class="col-md-5 offset-md-1 d-flex align-items-center">
+                <div class="stack-images">
+                    
+                    <div class="stack-images-1 wow " data-wow-delay="0.2s">
+                        <img src="/images/gallery/corpo3.jpeg" alt="Random Image 1" />
+                    </div>
+                    
+                    <div class="stack-images-2 wow " data-wow-delay="0.4s">
+                        <img src="/images/gallery/corpo2.jpeg" alt="Random Image 2" />
+                    </div>
+                    
+                    <div class="stack-images-3 wow " data-wow-delay="0.6s">
+                        <img src="/images/gallery/corpo1.jpeg" alt="Random Image 3" />
+                    </div>
+                    
+                </div>
+              </div>
+              <!-- End Stack Images -->
+
+
+
+<!-- End Stack Images -->
+
+                    <!-- End Stack Images -->
+
+                    <div class="col-md-6">
+                      <div class="content-wrapper">
+                        <div class="content">
+                          <h2 style="color: #333; padding:20px 0">What We Offers</h2>
+                          <p>
+                            The Omniverse Chamber of Commerce (TOCC) is the global network of chambers that connect and inspire businesses to benefit real economies and communities. TOCC works with companies to create coherent solutions across the globe. The TOCC delivers tangible results in international engagement, rules and standards, and on-the-ground solutions and implementation. Chambers of commerce are essential intermediaries between government, business, and the general public.
+                          </p>
+                          <p>
+                            With a variety of programs and services, TOCC is operating in almost every country, and the TOCC represents the interests of local, national, regional, bilateral, and transnational chambers of commerce and industry worldwide. The Omniverse Chamber of Commerce (TOCC) is a global organization that supports chambers in fostering private sector development, particularly in developing countries. It connects chambers to businesses based on relevancy, recognizing the importance of small and medium-sized enterprises (SMEs) in the global economy.
+                            TOCC offers trade services, practical tools, and events to help chambers deliver the best possible service to their members.
+                          </p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </section>
 
 
@@ -313,7 +371,10 @@
 
               #testimonials {
                   padding: 50px 20px;
-                  background-color: #f7f7f7;
+                  background-color: #ebebeb;
+                }
+                .testimonial-area{
+                  background-color: #ebebeb; 
                 }
                 
                 .testimonial-container {
@@ -325,22 +386,24 @@
                 
                 .carousel {
                   position: relative;
-                  max-width: 600px;
-                  background-color: #ffffff;
-                  border-radius: 10px;
-                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                  padding: 30px;
+                  display: flex;
+                  justify-content: space-around;
+                  
+                  
+                  
+                  
                   text-align: center;
                   overflow: hidden;
+                  gap: 20px; 
                 }
                 
-                .testimonial {
-                  display: none;
-                }
-                
-                .testimonial.active {
-                  display: block;
-                }
+              .testimonial {
+                flex-basis: 50%;
+                background-color: #ffffff;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 30px;
+                border-radius: 10px;
+              }
                 
                 .testimonial-image img {
                   width: 100px;
@@ -369,58 +432,98 @@
                   margin-top: 20px;
                 }
                 
-                .dot {
-                  height: 10px;
-                  width: 10px;
-                  margin: 0 5px;
-                  background-color: #bbb;
-                  border-radius: 50%;
-                  display: inline-block;
-                  transition: background-color 0.3s ease;
-                  cursor: pointer;
-                }
                 
-                .dot.active {
-                  background-color: #333;
-                }
                 
+                @media (max-width: 720px ){
+                  .carousel {
+                   flex-direction: column; 
+                  }
+                }
                 
           </style>
 
-            <section id="testimonials" style="min-height:500px; position:relative;">
-                <div class="testimonial-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                  <div class="">
-                    <div class="carousel">
-                      <div class="testimonial active">
-                        <div class="testimonial-image">
-                          <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Random Testimonial Image">
-                        </div>
-                        <div class="testimonial-content">
-                          <p class="testimonial-text">"In investing, what is comfortable is rarely profitable." — Robert Arnott</p>
-                          <p class="testimonial-author">Robert Arnott</p>
-                        </div>
-                      </div>
+          <div style="background-color: #fff;">
+            
+              <div>
+                <h2 style="color: #505050; padding:30px 0; display:block; text-align:center; font-size: 3rem">Our Mission & Vission </h2>
+              </div>
+            
+            <section class="vision-mission-container">
+
+           
+              <!-- Vision Card -->
+              <div class="card vision-card">
+                
+                  <div style="display: flex; justify-content:space-around; width:200px; margin:20px auto;">
+                    <i style="margin-top: 5px;" class="icon fa fa-eye"></i> <!-- Vision Icon -->
+                  <h3 class="card-title">Vision</h3>
+                  </div>
+               
+                <ul class="card-description">
+                  <li>To drive the future of universal business for the next century through ensuring a sustainable and dynamic environment for business communities.</li>
+                  <li>To bring companies and chambers together through membership locally, nationally and internationally to build the community for doing business universally.</li>
+                  <li>To strengthen capacity and networking to grow and invest in sustainable businesses and industries.</li>
+                </ul>
+              </div>
+            
+              <!-- Mission Card -->
+              <div class="card mission-card">
               
-                      <div class="testimonial">
-                        <div class="testimonial-image">
-                          <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="TOCC Testimonial Image">
-                        </div>
-                        <div class="testimonial-content">
-                          <p class="testimonial-text">"TOCC has been instrumental in helping our business navigate international markets and build valuable global partnerships." — Jane Doe</p>
-                          <p class="testimonial-author">Jane Doe, CEO</p>
-                        </div>
-                      </div>
+                <div style="display: flex; justify-content:space-around; width:200px; margin:20px auto;">
+                  <i class="icon fa fa-bullhorn"></i> <!-- Mission Icon -->
+                  <h3 class="card-title">Mission </h3>
+                  
+                </div>
+                
+            
+                <ul class="card-description">
+                  <li>To connect and inspire businesses around the world, driving tangible benefits for economies and communities through international collaboration, innovative solutions, and on-the-ground implementation.</li>
+                  <li>To foster the growth and development of the private sector, particularly in emerging markets, while championing the importance of small and medium-sized enterprises (SMEs) in the global economy.</li>
+                  
+                </ul>
+              </div>
+            </section>
+          </div>
+          
+
+         <div class="testimonial-area" >
+
+          <div>
+            <h2 style="color: #505050; padding:30px 0; display:block; text-align:center; font-size: 3rem">Our Clients Speak for Us</h2>
+          </div>
+
+          <section id="testimonials" style="min-height:500px; position:relative;">
+            <div class="testimonial-container" style="">
+              <div class="">
+                <div class="carousel">
+                  <div class="testimonial ">
+                    <div class="testimonial-image">
+                      <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Random Testimonial Image">
                     </div>
-              
-                    <div class="carousel-dots">
-                      <span class="dot active"></span>
-                      <span class="dot"></span>
+                    <div class="testimonial-content">
+                      <p class="testimonial-text">"In investing, what is comfortable is rarely profitable." — Robert Arnott</p>
+                      <p class="testimonial-author">Robert Arnott</p>
+                    </div>
+                  </div>
+          
+                  <div class="testimonial">
+                    <div class="testimonial-image">
+                      <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="TOCC Testimonial Image">
+                    </div>
+                    <div class="testimonial-content">
+                      <p class="testimonial-text">"TOCC has been instrumental in helping our business navigate international markets and build valuable global partnerships." — Jane Doe</p>
+                      <p class="testimonial-author">Jane Doe, CEO</p>
                     </div>
                   </div>
                 </div>
-              </section>
+          
+                
+              </div>
+            </div>
+          </section>
 
 
+         </div>
 
               <style>
 
@@ -430,7 +533,7 @@
                   }
                   
                   .content-wrapper {
-                    max-width: 1100px;
+                 
                     margin: 0 auto;
                     text-align: center;
                   }
@@ -468,167 +571,112 @@
 
 
 
-              <section id="about-us" style="min-height: 500px; padding: 40px 20px;">
-                <div class="content-wrapper">
-                  <h2 class="section-title">About Us</h2>
-                  <div class="content">
-                    <p>
-                      The Omniverse Chamber of Commerce (TOCC) is the global network of chambers that connect and inspire businesses to benefit real economies and communities. TOCC works with companies to create coherent solutions across the globe. The TOCC delivers tangible results in international engagement, rules and standards, and on-the-ground solutions and implementation. Chambers of commerce are essential intermediaries between government, business, and the general public.
-                    </p>
-                    <p>
-                      With a variety of programs and services, TOCC is operating in almost every country, and the TOCC represents the interests of local, national, regional, bilateral, and transnational chambers of commerce and industry worldwide. The Omniverse Chamber of Commerce (TOCC) is a global organization that supports chambers in fostering private sector development, particularly in developing countries. It connects chambers to businesses based on relevancy, recognizing the importance of small and medium-sized enterprises (SMEs) in the global economy.
-                    </p>
-                    <p>
-                      TOCC offers trade services, practical tools, and events to help chambers deliver the best possible service to their members.
-                    </p>
-                  </div>
-                </div>
-              </section>
               
               
               
               
               <style>
 
+                .vision-mission-container {
+                  width: 100%;
+                  padding: 50px 20px;
+                  display: flex;
+                  justify-content: space-around;
+                  gap: 40px;
+                  align-items: stretch; /* Ensure the items stretch to the same height */
+                  flex-wrap: wrap;
+                  background: #fff;
+                  align-items: center;
+                }
+                
+                /* Card Styles */
+                .card {
+                  width: 100%;
+                  max-width: 762px;
+                  padding: 30px;
+                  border-radius: 12px;
+                  background: linear-gradient(135deg,  #4278b7, #76b1f5 );
+                  color: rgb(248, 247, 247);
+                  text-align: center;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  flex-grow: 1; /* Allow the card to grow and take available space */
+                  height: 100%; /* Ensures both cards will have equal height */
+                }
+                
 
-                /* General Styles for Vision and Mission Section */
-.vision-mission-container {
-    width: 100%;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background: linear-gradient(135deg, #851fa6, #4278b7);
-    align-items: center;
-  }
-  
-  /* Card Styles */
-  .card {
-    width: 100%;
-    max-width: 762px;
-    padding: 30px;
-    border-radius: 12px;
-    background-color: #fff;
-    color: rgb(5, 5, 5);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  /* Vision Card Gradient Background */
-  
-  
-  .mission-card {
-    
-    color: rgb(24, 23, 23);
-  }
-  
-  /* Card Header (Icon and Title) */
-  .card-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .card-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color:#000;
-  }
-  
-  .icon {
-    font-size: 36px;
-    color: rgb(177, 27, 27);
-  }
-  
-  /* Vision Description */
-  .card-description {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
-  /* Mission List */
-  .card-description ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .card-description li {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    position: relative;
-  }
-  
-  .card-description li::before {
-    content: "•";
-    position: absolute;
-    left: -25px;
-    font-size: 30px;
-    color: #ffffff;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .vision-mission-container {
-      padding: 30px 15px;
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .card {
-      max-width: 100%;
-    }
-  
-    .card-title {
-      font-size: 22px;
-    }
-  
-    .card-description {
-      font-size: 16px;
-    }
-  }
+                .card li {
+                  text-align: justify;
+                  font-size: 1em;
+                }
+
+                /* Vision Card Gradient Background */
+                .mission-card {
+                  color: rgb(255, 250, 250);
+                  background: linear-gradient(135deg,  #8a096a, #c01d97 );
+                }
+                
+                .card-header {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  margin-bottom: 20px;
+                }
+                
+                .card-title {
+                  font-size: 24px;
+                  font-weight: bold;
+                  margin-top: 10px;
+                  text-transform: uppercase;
+                  letter-spacing: 2px;
+                  color: #fffdfd;
+                }
+                
+                .icon {
+                  font-size: 36px;
+                  color: rgb(255, 255, 255);
+                }
+                
+                .card-description {
+                  font-size: 18px;
+                  line-height: 1.6;
+                }
+
+
+                @media(max-width: 1366px){
+                  .card {
+                    width: 581px;
+                  }
+                }
+                
+                /* Responsive Design */
+                @media (max-width: 768px) {
+                  .vision-mission-container {
+                    padding: 30px 15px;
+                    flex-direction: column;
+                    gap: 30px;
+                  }
+                
+                  .card {
+                    max-width: 100%;
+                  }
+                
+                  .card-title {
+                    font-size: 22px;
+                  }
+                
+                  .card-description {
+                    font-size: 16px;
+                  }
+                }
+                
   
               </style>
 
 
 
-              <section class="vision-mission-container">
-                <!-- Vision Card -->
-                <div class="card vision-card">
-                  
-                    <i class="icon fa fa-eye"></i> <!-- Vision Icon -->
-                    <h3 class="card-title">Vision</h3>
-                 
-                  <p class="card-description">
-                    <li>To drive the future of universal business for the next century through ensuring a sustainable and dynamic environment for business communities.</li>
-                    <li>To bring companies and chambers together through membership locally, nationally and internationally to build the community for doing business universally.</li>
-                    <li>To strengthen capacity and networking to grow and invest in sustainable businesses and industries.</li>
-                  </p>
-                </div>
-              
-                <!-- Mission Card -->
-                <div class="card mission-card">
-                 
-                    <i class="icon fa fa-bullhorn"></i> <!-- Mission Icon -->
-                    <h3 class="card-title">Mission Statement</h3>
-              
-                  <ul class="card-description">
-                    <li>To connect and inspire businesses around the world, driving tangible benefits for economies and communities through international collaboration, innovative solutions, and on-the-ground implementation.</li>
-                    <li>To foster the growth and development of the private sector, particularly in emerging markets, while championing the importance of small and medium-sized enterprises (SMEs) in the global economy.</li>
-                    
-                  </ul>
-                </div>
-              </section>
-              
+          
 
            
             <style>
@@ -744,7 +792,7 @@
 			</section> -->
 			
 			<!-- section begin -->
-			<section id="section-about" data-bgimage="url(images/bg/1.png) fixed no-repeat">
+			<section id="section-about" style="background: #fff;">
 				
                     <div class="container">
                         <div class="row align-items-center">
@@ -752,7 +800,7 @@
                             <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
                                 <div class="wm wm-border dark wow fadeInDown" style="font-size:60px; top: -50px; left:-120px">OVERVIEW</div>
                                 <h2 class="title-1"> <span class="id-color" style="font-weight: 500; font-size:1.2em">Celebrating 50 Years</span> of Bangladesh-Qatar Diplomatic Relations</h2>
-                                <p>
+                                <p style="margin-right: 30px; text-align:justify">
                                     The Bangladesh Trade-Remittance Expo and Cultural Festival-2024 marks the 50th anniversary of diplomatic relations between Bangladesh and Qatar. Held from December 17-21, 2024 in Doha, the event celebrates Bangladesh's Victory Day and Qatar's National Day. Organized By BAgnladesh Embassy, Qatar. Supported by Hello Stars , The Universe Chamber of Commerce & VERSATILO GROUP. <br>It features a Trade-  Remittance Expo, a Grand Concert, and an Investment & Business Summit. The festival promotes bilateral trade, investment, and cultural exchange, with participation from Bangladeshi companies in garments, food, real estate, and tourism, fostering future cooperation between the two nations.
                                 </p>
 								
@@ -764,7 +812,6 @@
 							<div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
                                 <div class="de-images">
 									<!-- <img class="di-small wow fadeIn" src=" alt=""> -->
-									<img class="di-small-2 wow fadeIn" src="/images/gen/celebrate2.webp" alt="">
 									<img class="di-big img-fluid wow fadeInRight" data-wow-delay=".25s" src="images/gen/celebrate.webp" alt="">
 								</div>
                             </div>
@@ -831,14 +878,14 @@
                                                                     <i class="benefit-icon fa fa-check-circle"></i>
                                                                     <span>Time: 10.00 am to 8.00 pm</span>
                                                                 </li>
+                                                                <span><div class="d-flex justify-content-center align-items-center"> <a href="/expo_event.html" style="color: var(--primary-color-1); font-weight:bold; font-size:1em; text-decoration:underline;"> View more   </a></div></span>
                                                                
                                                               </ul>
+                                                              
                                                             </div>
                                                           </div>
                                                         
-                                                          <div class="row ">
-                                                            <div class="d-flex justify-content-center align-items-center"> <a href="/expo_event.html" style="color: var(--primary-color-1); font-weight:bold; font-size:2em; text-decoration:underline;"> Explore Expo Event  </a></div>
-                                                         </div>
+                                                         
                                                         
                                                 </div>
             
@@ -865,12 +912,13 @@
                                                             <li>
                                                                 <i class="benefit-icon fa fa-check-circle"></i>
                                                                 <span>Time: 7:00 pm to 11:30 pm</span>
+                                                                <span><div class="d-flex justify-content-center align-items-center"> <a href="/concert_event.html" style="color: var(--primary-color-1); font-weight:bold; font-size:1em; text-decoration:underline;"> view more  </a></div></span>
                                                             </li>
                                                           </ul>
                                                         </div>
                                                       </div>
                                                       <div class="row ">
-                                                        <div class="d-flex justify-content-center align-items-center"> <a href="/concert_event.html" style="color: var(--primary-color-1); font-weight:bold; font-size:2em; text-decoration:underline;"> Explore  Concert  Event  </a></div>
+                                                        
                                                      </div>
                                                 </div>
             
@@ -900,13 +948,12 @@
                                                             <li>
                                                                 <i class="benefit-icon fa fa-check-circle"></i>
                                                                 <span>Time:3.00 pm to 10.00 pm  </span>
+                                                                <span><div class="d-flex justify-content-center align-items-center"> <a href="/business_sumit.html" style="color: var(--primary-color-1); font-weight:bold; font-size:1em; text-decoration:underline;"> view more   </a></div></span>
                                                             </li>
                                                           </ul>
                                                         </div>
                                                       </div>
-                                                      <div class="row ">
-                                                        <div class="d-flex justify-content-center align-items-center"> <a href="/business_sumit.html" style="color: var(--primary-color-1); font-weight:bold; font-size:2em; text-decoration:underline;"> Explore Business Summit   </a></div>
-                                                     </div>
+                                                      
                                                 </div>
             
                                   
@@ -1028,8 +1075,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6 text-center wow fadeInUp d-flex align-items-center justify-content-center flex-column gap-5">
-                                    <h1 style="word-spacing: 1.5em; font-size: 2.3em; font-weight:bold">HELLO SUPER STARS   <br>
-                                      Life time Achievement
+                                    <h1 style="word-spacing: .5em; font-size: 3em; font-weight:bold">HELLO SUPER STARS   <br>
+                                      Life Time Achievement
                                         AWARD-2024 </h1>
     
                                     
@@ -1400,6 +1447,7 @@
     <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- Include Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -1477,40 +1525,24 @@
 
             if (scroll >= stickyOffset) {
                 
-                console.log('d')
+                
                 sticky.addClass('fixed')}
             else sticky.removeClass('fixed');
             });
         })
 
 
-        let currentIndex = 0;
-const testimonials = document.querySelectorAll('.testimonial');
-const dots = document.querySelectorAll('.dot');
 
-function showTestimonial(index) {
-  testimonials.forEach((testimonial, i) => {
-    testimonial.classList.remove('active');
-    dots[i].classList.remove('active');
-  });
 
-  testimonials[index].classList.add('active');
-  dots[index].classList.add('active');
-}
 
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => showTestimonial(index));
-});
-
-// Automatically switch testimonials every 5 seconds
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % testimonials.length;
-  showTestimonial(currentIndex);
-}, 5000);
 
 
 
     </script>
+    <script>
+      new WOW().init();
+  </script>
+  
   </body>
   <!-- Mirrored from www.madebydesignesia.com/themes/exhibiz/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Oct 2024 05:33:20 GMT -->
 </html>
