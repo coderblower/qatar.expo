@@ -151,7 +151,7 @@
                 font-size: 3.4em;
             }
 
-<style>
+
   .quote-section {
     background-color: #f9f9f9;
     padding: 40px;
@@ -197,7 +197,7 @@
     line-height: 1em;
   }
 </style>
-        </style>
+        
         <!-- content begin -->
         <div id="content" class="no-bottom no-top" style="background-color: #fff;">
 
@@ -285,9 +285,11 @@
   .principle-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2.5rem;
+    justify-content: center;
   }
-  .card {
+
+  .card-prince {
     background-color: #f5f5f5;
     padding: 1.5rem;
     border-radius: 8px;
@@ -299,6 +301,17 @@
     flex-direction: row;
     margin-bottom: 1.5rem; /* Adds spacing between rows */
   }
+.card-prince:nth-child(3){
+  flex-basis: 100%;
+  justify-content: center;
+  max-width: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+  .full-flex{
+    flex-basis: 100%;
+    justify-content: center;
+  }
   
   .card_icon{
     padding:0 20px;
@@ -308,12 +321,12 @@
   .card_icon i {
     font-size: 2em;
   }
-  .card h3 {
+  .card-prince h3 {
     font-size: 1.2rem;
     color: #004080;
   }
   
-  .card p {
+  .card-prince p {
     font-size: 1rem;
     line-height: 1.3;
   }
@@ -379,9 +392,9 @@
         <div class="row">
             <div class="col-12">
                 <section class="section-principles principles" style="background-color: #ffffff;">
-                    <h2>Chamber's Principles</h2>
+                    <h2 style="color: #333;">Chamber's Principles</h2>
                     <div class="principle-cards">
-                      <div class="card">
+                      <div class="card-prince">
                         <div class="card_icon">
                             <i class="fa fa-university"></i>
 
@@ -400,7 +413,7 @@
                             engagement. </p>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card-prince">
                         <div class="card_icon">
                             <i class="fa fa-users-cog"></i>
                         </div>
@@ -414,7 +427,14 @@
                                 sustainable growth and prosperity for the entire business community.  </p>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card-prince" style="position: relative;padding:0; " >
+
+                        <div style="display: flex; width:550px">
+                          <img src="/images/gallery/DALL·E-2023-12-13-19.34.12-A-futuristic-Mars-colony-with-domed-habitats-interconnected-tunnels-and-a-backdrop-of-the-Martian-landscape-showcasi.webp" style="width: 100%; border-radius: 5px;" alt="">
+                        </div>
+                        
+                      </div>
+                      <div class="card-prince full-flex">
                         <div  class="card_icon">
                             <i class="fa fa-briefcase"></i>
 
@@ -434,7 +454,7 @@
                         </div>
                       </div>
                    
-                      <div class="card">
+                      <div class="card-prince">
                         <div  class="card_icon">
                             <i class="fa fa-star"></i>
 
@@ -454,7 +474,7 @@
                             </p>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card-prince">
                         <div  class="card_icon">
                             <i class="fa fa-gavel"></i>
 
@@ -473,9 +493,7 @@
                             </p>
                         </div>
                       </div>
-                      <div class="card" style="position: relative;padding:0; " >
-                        <img src="/images/gallery/DALL·E-2023-12-13-19.34.12-A-futuristic-Mars-colony-with-domed-habitats-interconnected-tunnels-and-a-backdrop-of-the-Martian-landscape-showcasi.webp" style="width: 100%; border-radius: 5px;" alt="">
-                      </div>
+                    
 
                     </div>
                   </section>
@@ -528,13 +546,14 @@
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 50px 20px 20px 50px;
+    
     display: flex;
     flex-direction: row; /* Default to row for large screens */
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
   
 
@@ -556,6 +575,10 @@
 
   }
 
+  .text-padding{
+    padding: 20px;
+  }
+
   .objective p {
     font-size: 1.3em;
     color: #666;
@@ -564,6 +587,13 @@
   }
   .objective img {
     height: 100%;
+    position: absolute;
+    width: 230px !important;
+    top: 0;
+  }
+
+  .left-img{
+    left: 0
   }
 
   .section.objectives h2{
@@ -600,7 +630,7 @@
   <div class="objective-list">
     <!-- Objective 1 -->
     <div class="objective row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Technology Hub Development</h3>
         <p>To position the Chamber as a central technology hub, providing members with access to the latest innovations, digital tools, and technical expertise. This objective promotes technological advancement, enhances member productivity, and fosters a forward-looking business community.</p>
       </div>
@@ -612,9 +642,9 @@
     <!-- Objective 2 -->
     <div class="objective row">
         <div class="col-12 col-md-3 objective-img">
-            <img style="" src="/images/tocc/objective_3.webp" alt="Fintech Collaboration Image" class="w-100">
+            <img class="left-img" style="" src="/images/tocc/objective_3.webp" alt="Fintech Collaboration Image" class="w-100">
           </div>
-        <div class="col-12 col-md-9">
+        <div class="col-12 col-md-9 text-padding">
         <h3>Fintech Collaboration</h3>
         <p>To support the growth of financial technology (fintech) within the Chamber by connecting members with fintech resources, partnerships, and educational opportunities. This objective aims to enhance financial services, streamline business operations, and enable digital transformation.</p>
       </div>
@@ -623,7 +653,7 @@
 
     <!-- Objective 3 -->
     <div class="objective row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Crowdfunding Initiatives</h3>
         <p>To facilitate crowdfunding opportunities for Chamber members, providing them with an alternative funding source to support business projects and ventures. This service aims to foster community support for member initiatives and encourage collaborative investment in innovative ideas.</p>
       </div>
@@ -636,9 +666,9 @@
     <div class="objective row">
 
         <div class="col-12 col-md-3 objective-img">
-            <img src="/images/tocc/objective_6.webp" style="" alt="Investment Opportunities Image" class="w-100">
+            <img class="left-img" src="/images/tocc/objective_6.webp" style="" alt="Investment Opportunities Image" class="w-100">
           </div>
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Investment Opportunities for Startup Businesses</h3>
         <p>To encourage innovation and entrepreneurship by issuing investments and funding opportunities for startup businesses. This objective aims to support early-stage companies, foster economic development, and cultivate a thriving startup ecosystem within the Chamber.</p>
       </div>
@@ -647,7 +677,7 @@
 
     <!-- Objective 5 -->
     <div class="objective row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Membership Opportunities for Individuals and Entities</h3>
         <p>To offer membership opportunities to both individual business professionals and business entities, creating a diverse and dynamic Chamber community. This objective enhances networking, collaboration, and access to resources that support business growth and success.</p>
       </div>
@@ -659,9 +689,9 @@
     <!-- Objective 6 -->
     <div class="objective row">
         <div class="col-12 col-md-3 objective-img">
-            <img style=""  src="/images/tocc/objective_8.webp" alt="Visa Reference Letters Image" class="w-100">
+            <img class="left-img" style=""  src="/images/tocc/objective_8.webp" alt="Visa Reference Letters Image" class="w-100">
           </div>
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Visa Reference Letters</h3>
         <p>To provide official visa reference letters for individual members around the world, supporting their involvement in international trade and business activities. These letters aim to facilitate seamless entry processes and strengthen members' capacity for global business engagements.</p>
       </div>
@@ -670,7 +700,7 @@
 
     <!-- Objective 7 -->
     <div class="objective row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Pre-Shipment Inspection (PSI) and Shipment Confirmation from Various Countries</h3>
         <p>To offer Pre-Shipment Inspection (PSI) services and shipment confirmations from diverse international locations, ensuring quality control, regulatory compliance, and timely delivery of goods for members. These services help protect international members' investments, reduce risk, and maintain supply chain integrity.</p>
       </div>
@@ -682,9 +712,9 @@
     <!-- Objective 8 -->
     <div class="objective row">
         <div class="col-12 col-md-3 objective-img">
-            <img src="/images/tocc/objective_10.webp" alt="Work Permit Reference Image" class="w-100">
+            <img class="left-img" src="/images/tocc/objective_10.webp" alt="Work Permit Reference Image" class="w-100">
           </div>
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Work Permit Reference</h3>
         <p>To assist members in acquiring work permits for international assignments, by providing reference support and documentation. This service aims to enable the seamless mobility of talent and skills across borders, aiding members' expansion into global markets.</p>
       </div>
@@ -693,7 +723,7 @@
 
     <!-- Objective 9 -->
     <div class="objective row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Business Arbitration Support</h3>
         <p>To serve as a resource for business arbitration, providing members with professional guidance and support in resolving commercial disputes fairly and effectively. This objective supports a cooperative business environment, fostering trust and stability within the Chamber's community.</p>
       </div>
@@ -704,10 +734,10 @@
 
     <!-- Objective 10 -->
     <div class="objective row">
-        <div class="col-12 col-md-3 objective-img">
-            <img src="/images/tocc/objective_12.webp" alt="Business Disputes Assistance Image" class="w-100">
+        <div class="col-12 col-md-3 objective-img ">
+            <img class="left-img" src="/images/tocc/objective_12.webp" alt="Business Disputes Assistance Image" class="w-100">
           </div>
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 text-padding">
         <h3>Assistance with Business Disputes</h3>
         <p>To assist members in addressing and resolving business disputes by providing impartial advice, mediation resources, and access to legal professionals. This service aims to minimize conflict, support fair outcomes, and maintain positive business relationships among members.</p>
       </div>
