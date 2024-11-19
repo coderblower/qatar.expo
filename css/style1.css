@@ -8,6 +8,11 @@ h1, h2, h3, p {
 
 
 
+
+#content {
+    margin-top: 30px;
+}
+
 #jarallax-container-0 {
     position: relative; /* Ensure the pseudo-element stays within the container */
   }
@@ -141,7 +146,9 @@ margin-top: 10px;
 
 header.transparent{
     background: #fff;
-    color:#000
+    color:#000;
+    height: 130px;
+
 }
 
 #mainmenu > li > a, .ms-2 dotted-separator > li > a {
@@ -149,8 +156,8 @@ header.transparent{
 }
 
 .logo{
-    width: 140px;
-  
+    width: 250px;
+
 }
 
 
@@ -171,8 +178,54 @@ header.smaller:not(.header-bottom):not(.side-header) .logo{
     background: #000000;
 }
 
+#tab1 h2{
+
+}
+
+#tab1  span{
+    
+}
+
+#tab1 i{
+    
+}
+
+
+#tab2 h2{
+
+}
+
+#tab2  span{
+    
+}
+
+#tab2 i{
+    
+}
+
+
+#tab3 h2, #tab1 h2, #tab2 h2{
+    font-size: 3em;
+}
+
+#tab3  span, #tab2  span, #tab1  span {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+#tab3 img{
+    width: 700px;
+}
+
 .Event-details{
     padding: 0;
+}
+
+
+@media (max-width: 768px){
+    #tab3 img{
+        width: 400px;
+    } 
 }
 
 #menu-btn{
@@ -311,6 +364,7 @@ header.header-mobile #mainmenu li span.active,header.header-mobile #mainmenu li 
     position: relative;
     width: 100%;
     height: 400px; /* Adjust as needed */
+    left: 100px; 
 }
 
 /* Positioning and Styling Each Image */
@@ -332,19 +386,19 @@ header.header-mobile #mainmenu li span.active,header.header-mobile #mainmenu li 
 
 .stack-images-2 {
     z-index: 2;
-    top: 80px;
-    right: 80px; /* Shift image 2 upwards by 50px */
+    top: 310px;
+    right: 430px; /* Shift image 2 upwards by 50px */
 }
 
 .stack-images-3 {
     z-index: 1;
     top: 150px;
-    right: 150px; /* Shift image 3 upwards by 100px */
+    right: 220px; /* Shift image 3 upwards by 100px */
 }
 
 /* Image Styling */
 .stack-images img {
-    width: 400px;
+    width: 300px;
     height: auto;
     display: block;
     border-radius: 10px;
@@ -353,12 +407,41 @@ header.header-mobile #mainmenu li span.active,header.header-mobile #mainmenu li 
 
 /* Apply visibility and opacity after animation */
 .wow.animated {
-    visibility: visible;
-    opacity: 1;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 
-
+@media (max-width: 1370px ){
+    .stack-images {
+        left: 200px;
+    }
+    .stack-images-1 {
+        z-index: 3;
+        top: 0; /* Top image stays at the top */
+    }
+    
+    .stack-images-2 {
+        z-index: 2;
+        top: 93px;
+        right: 150px; /* Shift image 2 upwards by 50px */
+    }
+    
+    .stack-images-3 {
+        z-index: 1;
+        top: 190px;
+        right: 300px; /* Shift image 3 upwards by 100px */
+    }
+    
+    /* Image Styling */
+    .stack-images img {
+        width: 210px;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+}
 
 /* Styles for screens up to 900px */
 @media (max-width: 900px) {
@@ -424,4 +507,13 @@ header.header-mobile #mainmenu li span.active,header.header-mobile #mainmenu li 
 #mainmenu ul.dropdown ul.dropdown {
     left: 200px; /* Additional left offset for nested dropdowns */
     top: 0;
+}
+
+footer{
+    background-color: #3b3b3b;
+  }
+
+
+#footer span{
+    color: #fff;
 }
